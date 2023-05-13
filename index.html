@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ch-26-30</title>
+</head>
+<body>
+    
+    
+     <script>
+      
+    // 1. Write a program that takes a positive integer from user & display the following in your browser.
+        // a. number
+        // b. round off value of the number
+        // c. floor value of the number
+        // d. ceil value of the number
+          
+    document.write("<h1>Question 1 </h1>")
+     var n= prompt("enter a positive number")
+     document.write("Given Number : " + n)
+     var round=Math.round(n)
+     document.write("<br> After Round off  : " + round)
+     var floor=Math.floor(n)
+     document.write("<br> Floor value : " + floor)
+     var ceil=Math.ceil(n)
+     document.write("<br> Ceil value : " + ceil)
+
+     
+    // 2. Write a program that takes a negative floating point number from user & display the following in your browser.
+        //  a. number
+        //  b. round off value of the number
+        //  c. floor value of the number
+        //  d. ceil value of the number
+
+        document.write("<h1>Question 2 </h1>")
+     var n1= prompt("enter a negative number")
+     document.write("Given Number : " + n1)
+     var round1=Math.round(n1)
+     document.write("<br> After Round off  : " + round1)
+     var floor1=Math.floor(n1)
+     document.write("<br> Floor value : " + floor1)
+     var ceil1=Math.ceil(n1)
+     document.write("<br> Ceil value : " + ceil1)
+        
+    // 3. Write a program that displays the absolute value of a number.
+    // E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+        
+     document.write("<h1>Question 3 </h1>")
+     var a=prompt("enter any number")
+     var abs=Math.abs(a)
+     document.write(" Absolute value of  " + a + " is " + abs)
+
+    // 4. Write a program that simulates a dice using random() method of JS Math class. Display the value of dice in your browser.
+       
+    document.write("<h1>Question 4 </h1>")
+    var dice1=Math.random()*10
+    var dice1A=Math.round(dice1)
+    document.write("Random Dice value :" + dice1A)
+    var dice2=Math.random()*10
+    var dice2A=Math.round(dice2)
+    document.write("<br> Random Dice value :" + dice2A)
+
+
+    // 5. Write a program that simulates a coin toss using random() method of JS Math class. Display the value of coin in your browser
+
+    document.write("<h1>Question 5 </h1>")
+
+      var coin =Math.floor(Math.random()*2)     ;
+
+     if(coin===0){
+        document.write("2")
+        document.write("<br> Random coin value: Head ")
+     }
+     else{
+        document.write("1")
+        document.write("<br> Random coin value : Tail ");
+     }
+
+
+
+
+
+    //  6. Write a program that shows a random number between 1 and 100 in your browser.
+
+    document.write("<h1>Question 6 </h1>")
+    var num=Math.floor(Math.random()*100)+1
+    document.write("<br> random number between 1 and 100 is " + num)
+
+    // 7. Write a program that asks the user about his weight. Parse the user input and display his weight in your browser. Possible user inputs can be:
+        // a. 50
+        // b. 50kgs
+        // c. 50.2kgs
+        // d. 50.2kilograms
+
+     document.write("<h1>Question 7 </h1>")
+     var weight = parseInt(prompt("Enter weight"))
+     document.write("the weight is " + weight)
+     var weight = Math.trunc(weight)
+     document.write("<br> the weight is " + weight + " kgs")
+
+     document.write("<br> the weight is " + weight+ " kgs")
+     document.write("<br> the weight is " + weight+ " kilograms")
+
+    // 8. Write a program that stores a random secret number from 1 to 10 in a variable. Ask the user to input a number between 1 and 10. If the user input equals the secret number, congratulate the user.
+
+    document.write("<h1>Question 8 </h1>")
+    var secno =2
+    var rand = Math.random()*10
+    var rand1= Math.round(rand)
+    document.write("secret no is " + secno)
+    document.write("<br> random no is "+ rand1)
+    // var secno1=+prompt("enter any number")
+    if(secno === rand1){
+        document.write("<br> congratulation condition match")
+    } 
+    else{
+        document.write("<br> sorry condition not match")
+    }
+
+     </script>
+
+
+</body>
+</html>
